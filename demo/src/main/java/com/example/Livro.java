@@ -46,11 +46,4 @@ public class Livro {
 
         return null;
     }
-
-    public static void main(String[] args) {
-        Livro livro = new Livro("Meu Livro");
-        Versiculo versiculo1 = new Versiculo(12, "Se Deus assim nos amou, também nós devemos amar uns aos outros");
-        //capitulo.addVersiculos(versiculo1);
-        Capitulo capituloEncontrado = livro.buscaVersiculos("Se Deus assim nos amou, também nós devemos amar uns aos outros");
-    }
 }

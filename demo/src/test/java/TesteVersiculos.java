@@ -1,8 +1,5 @@
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.*;
 
@@ -36,5 +33,13 @@ public class TesteVersiculos {
     public void buscarVersiculoLivro(){
         Capitulo capituloEncontrado = livro.buscaVersiculos("Se Deus assim nos amou, também nós devemos amar uns aos outros");
         assertEquals(capituloEncontrado.getNumero(), 10);
+    }
+
+    @Test
+    public void testaComparaVersiculos(){
+        Versiculo versiculoA = new Versiculo(1, "Amados, amemos uns aos outros, pois o amor procede de Deus. Aquele que ama é nascido de Deus e conhece a Deus.");
+        Versiculo versiculoB = new Versiculo(1, "Amados, amemos uns aos outros, pois o amor procede de Deus. Aquele que ama é nascido de Deus e conhece a Deus.");
+
+        assertEquals(versiculoA, versiculoB);
     }
 }

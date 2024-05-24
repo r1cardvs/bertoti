@@ -16,4 +16,16 @@ public class Versiculo {
     public int getNumero(){
         return numero;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Versiculo other = (Versiculo) obj;
+        return numero == other.numero && texto.equals(other.texto);
+    }
 }
