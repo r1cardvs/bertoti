@@ -20,8 +20,8 @@ public class TesteVersiculos {
 
     @Test 
     public void insertVersiculo(){
-        assertEquals(capitulo.getVersiculos().getFirst().getNumero(), 12);
-        assertEquals(capitulo.getVersiculos().getFirst().getTexto(), "Se Deus assim nos amou, também nós devemos amar uns aos outros");
+        assertEquals(capitulo.getVersiculos().get(0).getNumero(), 12);
+        assertEquals(capitulo.getVersiculos().get(0).getTexto(), "Se Deus assim nos amou, também nós devemos amar uns aos outros");
     }
 
     @Test
